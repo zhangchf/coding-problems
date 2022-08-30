@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.6.0"
+    kotlin("jvm") version "1.7.10"
 }
 
 group = "com.zcf"
@@ -12,10 +12,10 @@ repositories {
 }
 
 dependencies {
-    implementation("com.squareup.okio:okio:3.0.0")
-    implementation("com.google.code.gson:gson:2.8.9")
+    implementation("com.squareup.okio:okio:3.2.0")
+    implementation("com.google.code.gson:gson:2.9.0")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
 
     testImplementation(kotlin("test"))
     implementation(kotlin("stdlib-jdk8"))
