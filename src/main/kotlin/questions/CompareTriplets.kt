@@ -41,7 +41,7 @@ fun compareTriplets(a: Array<Int>, b: Array<Int>): Array<Int> {
     return arrayOf(scoreA, scoreB)
 }
 
-fun main(args: Array<String>) {
+fun main() {
 
     val a = readLine()!!.trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
 

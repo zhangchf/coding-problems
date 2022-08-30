@@ -1,4 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+  <plurals name="bulkListingsPartialCreationBodyDTC">
+    <item quantity="one">You have %1$d item that you want to consign with us. However, we were unable to create %2$d of your listings due to an error. Please try re-listing those items again or contact us.</item>
+    <item quantity="other">You have %1$d items that you want to consign with us. However, we were unable to create %2$d of your listings due to an error. Please try re-listing those items again or contact us.</item>
+  </plurals>
+  <plurals name="dropOffToConsignSavedBody">
+    <item quantity="one">You have %d item that you want to consign with us. Once you’re ready, drop off all your items in person to start selling.</item>
+    <item quantity="other">You have %d items that you want to consign with us. Once you’re ready, drop off all your items in person to start selling.</item>
+  </plurals>
+  <plurals name="itemCounter">
+    <item quantity="one">%d ITEM</item>
+    <item quantity="other">%d ITEMS</item>
+  </plurals>
+</resources>
   <string name="_isNowAvailableInYourPayPalAccount">%1$s is now available in your PayPal account</string>
   <string name="_offer">%1$d Offer</string>
   <string name="about">About</string>
@@ -6,6 +19,8 @@
   <string name="aboutFlightClubTitle">About Flight Club</string>
   <string name="aboutGoatDescription">GOAT is the global platform for the greatest products from the past, present and future. Shop just dropped and exclusive sneakers, apparel and accessories from the world\'s leading brands.</string>
   <string name="aboutGoatTitle">About GOAT</string>
+  <string name="absoluteHigh">Absolute High</string>
+  <string name="absoluteLow">Absolute Low</string>
   <string name="accept">Accept</string>
   <string name="acceptingOfferFor">Accepting Offer for %1$s</string>
   <string name="accessCodeAlreadyUsedMessage">This code has already been used.</string>
@@ -73,6 +88,7 @@
   <string name="all_count">All (%1$s)</string>
   <string name="allClosedOrders_count">All Closed Orders (%1$d)</string>
   <string name="allOpenOrders_count">All Open Orders (%1$d)</string>
+  <string name="allTime">All Time</string>
   <string name="alreadyJoinedWaitlist">This email has already joined the waitlist</string>
   <string name="amount">Amount</string>
   <string name="amountOwed">Amount Owed</string>
@@ -131,9 +147,6 @@
   <string name="bulkListingsExitDisclaimer">If you don’t finish now, all of these listings will not be saved.</string>
   <string name="bulkListingsPartialCreationBody">You can view and manage these listing within your inventory. However, we were unable to create %d of your listings due to an error. Please try re-listing those items again or contact us.</string>
   <plurals name="bulkListingsPartialCreationBodyDTC">
-    <item quantity="one">You have %1$d item that you want to consign with us. However, we were unable to create %2$d of your listings due to an error. Please try re-listing those items again or contact us.</item>
-    <item quantity="other">You have %1$d items that you want to consign with us. However, we were unable to create %2$d of your listings due to an error. Please try re-listing those items again or contact us.</item>
-  </plurals>
   <string name="bulkListingsPartialCreationTitle">Created &lt;font color=&quot;#7856FF&quot;&gt;%1$d of %2$d&lt;/font&gt; Listings</string>
   <string name="bulkListingsPartialCreationTitleDTC">&lt;font color=&quot;#7856FF&quot;&gt;%1$d of %2$d&lt;/font&gt; Items Added for Consignment</string>
   <string name="bulkListingsSuccessfulBody">You can view and manage these listings within your inventory.</string>
@@ -355,9 +368,6 @@
   <string name="dropOffToConsignNotAvailablePDP">Consignment:\nNot Available</string>
   <string name="dropOffToConsignNotAvailableTitle">Consignment: Not Available</string>
   <plurals name="dropOffToConsignSavedBody">
-    <item quantity="one">You have %d item that you want to consign with us. Once you’re ready, drop off all your items in person to start selling.</item>
-    <item quantity="other">You have %d items that you want to consign with us. Once you’re ready, drop off all your items in person to start selling.</item>
-  </plurals>
   <string name="dropOffToConsignSavedTitle">Item Added for Consignment</string>
   <string name="droppedOff">Dropped Off</string>
   <string name="droppedOffAt">Dropped Off at %1$s</string>
@@ -591,9 +601,6 @@
   <string name="itemConditionIssuesAdditionalDescriptionP2PHint">e.g. Rip or tear,  stain, odor, missing button/zipper, etc.</string>
   <string name="itemConditionP2PBody">Thoroughly inspect your item before listing it for sale. If your item shows any signs of wear or use, it must be listed as Used.</string>
   <plurals name="itemCounter">
-    <item quantity="one">%d ITEM</item>
-    <item quantity="other">%d ITEMS</item>
-  </plurals>
   <string name="itemListingRequest">Item Listing Request</string>
   <string name="itemListingRequestBody">Hello,\n\nPlease provide the following information to complete your request.\n\nAll fields must be completed to qualify for consideration.\n\n1. Item Name\n2. Type of Item (e.g. T-shirt, Wallet, etc.)\n3. Item Color (e.g. red, orange, yellow, etc.)\n4. Size\n5. Brand Name\n6. Photos (please provide 3 photos, we can’t approve any request without high resolution photos with good lighting)\n\nThanks for selling with us!\n\nalias</string>
   <string name="itemLocation">Item Location</string>
@@ -827,6 +834,15 @@
   <string name="pendingSale">Pending Sale</string>
   <string name="pendingShipment">Pending Shipment</string>
   <string name="percentage">%1$s%%</string>
+  <string name="periodDaysAgo">%1$d Days Ago</string>
+  <string name="periodMonthsAgo">%1$d Months Ago</string>
+  <string name="periodOneMonthAgo">1 Month Ago</string>
+  <string name="periodOneWeekAgo">1 Week Ago</string>
+  <string name="periodOneYearAgo">1 Year Ago</string>
+  <string name="periodToday">Today</string>
+  <string name="periodWeeksAgo">%1$d Weeks Ago</string>
+  <string name="periodYearsAgo">%1$d Years Ago</string>
+  <string name="periodYesterday">Yesterday</string>
   <string name="phoneNumber">Phone Number</string>
   <string name="phoneNumberCannotBeEmpty">Phone number cannot be empty</string>
   <string name="phoneNumberMustBe11Digits">Phone must be 11 digits.</string>
@@ -935,21 +951,41 @@
   <string name="saleAlert">Sale Alert</string>
   <string name="saleNotificationsMessage">You\'ll receive sale notifications when you need to perform an action in order to keep the sale going (e.g., Confirm, Ship, etc.) </string>
   <string name="sales">Sales</string>
-  <string name="salesPlusInventory">Sales + Inventory</string>
-  <string name="salesChartLearnMoreTitle">Learn About The Data</string>
-  <string name="salesChartLearnMoreBody">This chart shows past sales data. Tap and hold to understand the average sale at each point in time. You can also see the increase or decrease in market value for each time period.</string>
-  <string name="salesChart3DayAverageTitle">3-Day Rolling Average</string>
   <string name="salesChart3DayAverageBody">For the 1W - 1Y chart, we are displaying a 3-day rolling average. Each point represents an average of the past 3 days worth of sales.</string>
-  <string name="salesChartWeeklyAverageTitle">Weekly Average</string>
-  <string name="salesChartWeeklyAverageBody">For the all-time chart, each point represents an average of a week’s worth of sales.</string>
-  <string name="salesChartColorsTitle">Colors</string>
-  <string name="salesChartColorsBody">This represents the increase/descrease in market value for the item during a time period you’re on. Green means it has gone up and red means it has gone down.</string>
-  <string name="salesChartAbsoluteHighTitle">Absolute High</string>
+  <string name="salesChart3DayAverageTitle">3-Day Rolling Average</string>
+  <string name="salesChart3DayAvgFor">3-Day Avg for %1$s - %2$s</string>
   <string name="salesChartAbsoluteHighBody">This is the absolute highest price that the item has sold for during the time period you’re on and not based on an average.</string>
-  <string name="salesChartAbsoluteLowTitle">Absolute Low</string>
+  <string name="salesChartAbsoluteHighTitle">Absolute High</string>
   <string name="salesChartAbsoluteLowBody">This is the absolute lowest price that the item has been sold for during the time period you’re on and not based on an average.</string>
-  <string name="salesChartAverageTitle">Average</string>
+  <string name="salesChartAbsoluteLowTitle">Absolute Low</string>
   <string name="salesChartAverageBody">This is the average that the item has been sold for during the time period you’re on.</string>
+  <string name="salesChartAverageTitle">Average</string>
+  <string name="salesChartColorsBody">This represents the increase/descrease in market value for the item during a time period you’re on. Green means it has gone up and red means it has gone down.</string>
+  <string name="salesChartColorsTitle">Colors</string>
+  <string name="salesChartLastSoldInfoBody">There are no sales within %1$s. Go to \'%2$s\' to see the latest sales data.</string>
+  <string name="salesChartLastSoldInfoTitle">%1$s Last Sold %2$s</string>
+  <string name="salesChartLearnMoreBody">This chart shows past sales data. Tap and hold to understand the average sale at each point in time. You can also see the increase or decrease in market value for each time period.</string>
+  <string name="salesChartLearnMoreTitle">Learn About The Data</string>
+  <string name="salesChartNoDataDescription">Data chart will display once this item has more sales</string>
+  <string name="salesChartNoRecentSalesForSize">No Recent Sales for %1$s</string>
+  <string name="salesChartPriceVariation">%1$s [%2$s%%]</string>
+  <string name="salesChartViewAnotherSize">View Another Size</string>
+  <string name="salesChartWeeklyAverageBody">For the all-time chart, each point represents an average of a week’s worth of sales.</string>
+  <string name="salesChartWeeklyAverageTitle">Weekly Average</string>
+  <string name="salesChartWeeklyAvgFor">Weekly Avg for %1$s - %2$s</string>
+  <string name="salesPeriodDescription1M">last month</string>
+  <string name="salesPeriodDescription1W">last week</string>
+  <string name="salesPeriodDescription1Y">last year</string>
+  <string name="salesPeriodDescription3M">last three months</string>
+  <string name="salesPeriodDescription6M">last six months</string>
+  <string name="salesPeriodDescriptionAll">all time</string>
+  <string name="salesPeriodName1M">1M</string>
+  <string name="salesPeriodName1W">1W</string>
+  <string name="salesPeriodName1Y">1Y</string>
+  <string name="salesPeriodName3M">3M</string>
+  <string name="salesPeriodName6M">6M</string>
+  <string name="salesPeriodNameAll">ALL</string>
+  <string name="salesPlusInventory">Sales + Inventory</string>
   <string name="sameAsReturnAddress">Same as Return Address</string>
   <string name="save">Save</string>
   <string name="saveAndUse">Save and Use</string>
@@ -1214,6 +1250,7 @@
   <string name="viewCommercialInvoicePrint2Copies">View Commercial Invoice (print 2 copies)</string>
   <string name="viewDataForNewItems">View Data for new items</string>
   <string name="viewImages">View Images</string>
+  <string name="viewMoreData">View More Data</string>
   <string name="viewMorePricingData">View More Pricing Data</string>
   <string name="viewOrder">View Order</string>
   <string name="viewPackagingInstructions">view packing instructions</string>
@@ -1279,43 +1316,3 @@
   <string name="zenginCodeInfoMessage">The Zengin Code is a unique number used in Japan to identify banks and branches for domestic payments. This code includes 4 digits that identify a bank company, followed by 3 more digits that identify the specific bank branch.</string>
   <string name="zipCode">Zip code</string>
   <string name="zipCodeOptional">Zip Code(Optional)</string>
-  <string name="salesChart3DayAvgFor">3-Day Avg for %1$s - %2$s</string>
-  <string name="salesChartNoDataDescription">Data chart will display once this item has more sales</string>
-  <string name="salesChartPriceVariation">%1$s [%2$s%%]</string>
-  <string name="salesChartWeeklyAvgFor">Weekly Avg for %1$s - %2$s</string>
-
-  <string name="salesPeriodName1W">1W</string>
-  <string name="salesPeriodName1M">1M</string>
-  <string name="salesPeriodName3M">3M</string>
-  <string name="salesPeriodName6M">6M</string>
-  <string name="salesPeriodName1Y">1Y</string>
-  <string name="salesPeriodNameAll">ALL</string>
-  <string name="salesPeriodDescription1W">last week</string>
-  <string name="salesPeriodDescription1M">last month</string>
-  <string name="salesPeriodDescription3M">last three months</string>
-  <string name="salesPeriodDescription6M">last six months</string>
-  <string name="salesPeriodDescription1Y">last year</string>
-  <string name="salesPeriodDescriptionAll">all time</string>
-
-  <string name="salesChartLastSoldInfoTitle">%1$s Last Sold %2$s</string>
-  <string name="salesChartLastSoldInfoBody">There are no sales within %1$s. Go to \'%2$s\' to see the latest sales data.</string>
-  <string name="salesChartNoRecentSalesForSize">No Recent Sales for %1$s</string>
-  <string name="salesChartViewAnotherSize">View Another Size</string>
-
-  <string name="absoluteHigh">Absolute High</string>
-  <string name="absoluteLow">Absolute Low</string>
-
-  <string name="allTime">All Time</string>
-
-  <string name="viewMoreData">View More Data</string>
-
-  <string name="periodToday">Today</string>
-  <string name="periodYesterday">Yesterday</string>
-  <string name="periodDaysAgo">%1$d Days Ago</string>
-  <string name="periodOneWeekAgo">1 Week Ago</string>
-  <string name="periodWeeksAgo">%1$d Weeks Ago</string>
-  <string name="periodOneMonthAgo">1 Month Ago</string>
-  <string name="periodMonthsAgo">%1$d Months Ago</string>
-  <string name="periodOneYearAgo">1 Year Ago</string>
-  <string name="periodYearsAgo">%1$d Years Ago</string>
-</resources>

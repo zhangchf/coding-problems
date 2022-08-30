@@ -1,3 +1,5 @@
+package tasks
+
 import okio.BufferedSink
 import okio.buffer
 import okio.sink
@@ -17,10 +19,13 @@ fun main() {
 
     lines.forEach { line ->
         println(line)
+        if (line.isBlank()) return@forEach
+
         val name = findStringNodeName(line)
-        if (name == null) {
+        if (name == null || line.isExceptional("plurals name=\"", "item quantity=\"")) {
             exportLine(line, bufferedSink)
-        } else {
+        }
+        if (name != null) {
             linesMap.put(name, line)
         }
     }
@@ -45,6 +50,10 @@ fun findStringNodeName(line: String): String? {
     val nameStart = start + 6
     val nameEnd = line.indexOf("\"", startIndex = nameStart)
     return line.substring(nameStart, nameEnd)
+}
+
+fun String.isExceptional(vararg exceptionalKeys: String): Boolean {
+    return exceptionalKeys.any { this.indexOf(it, ignoreCase = false) > -1 }
 }
 
 fun exportLine(line: String, bufferedSink: BufferedSink) {
