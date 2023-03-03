@@ -4,7 +4,7 @@ import kotlin.jvm.JvmStatic
 import java.lang.Exception
 import java.lang.RuntimeException
 
-internal object Result {
+private object Result {
     /*
      * Complete the 'parseInteger' function below.
      *
@@ -29,7 +29,7 @@ internal object Result {
     }
 }
 
-object Solution {
+private object Solution {
     @Throws(IOException::class)
     @JvmStatic
     fun main(args: Array<String>) {

@@ -1,6 +1,3 @@
-import Result.parseInteger
-import java.io.*
-
 
 fun parseInteger(s: String): Int {
     var i = 0
