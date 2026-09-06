@@ -20,7 +20,7 @@ fun parseInteger(s: String): Int {
 }
 
 fun main(args: Array<String>) {
-    val s = readLine()!!
+    val s = readln()
 
     val result = try {
         parseInteger(s)

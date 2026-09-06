@@ -1,7 +1,7 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 
 plugins {
-    kotlin("jvm") version "1.9.0"
+    kotlin("jvm") version "2.4.10"
 }
 
 group = "com.zcf"
@@ -12,23 +12,20 @@ repositories {
 }
 
 dependencies {
-    implementation("com.squareup.okio:okio:3.2.0")
-    implementation("com.google.code.gson:gson:2.9.0")
+    implementation("com.squareup.okio:okio:3.18.1")
+    implementation("com.google.code.gson:gson:2.14.0")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
 
     testImplementation(kotlin("test"))
-    implementation(kotlin("stdlib-jdk8"))
+
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.11.0")
 }
 
 tasks.test {
     useJUnit()
 }
 
-//tasks.test {
-//    useJUnitPlatform()
-//}
-
 kotlin {
-    jvmToolchain(8)
+    jvmToolchain(21)
 }

@@ -17,9 +17,9 @@ fun designerPdfViewer(h: Array<Int>, word: String): Int {
 
 fun main() {
 
-    val h = readLine()!!.trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
+    val h = readln().trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
 
-    val word = readLine()!!
+    val word = readln()
 
     val result = designerPdfViewer(h, word)
 

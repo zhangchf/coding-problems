@@ -21,9 +21,9 @@ fun reverseArray(a: Array<Int>): Array<Int> {
 }
 
 fun main() {
-    val arrCount = readLine()!!.trim().toInt()
+    val arrCount = readln().trim().toInt()
 
-    val arr = readLine()!!.trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
+    val arr = readln().trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
 
     val res = reverseArray(arr)
 

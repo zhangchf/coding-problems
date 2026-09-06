@@ -13,11 +13,11 @@ fun mostFrequent(arr: Array<Int>): Int {
 }
 
 fun main(args: Array<String>) {
-    val arrCount = readLine()!!.trim().toInt()
+    val arrCount = readln().trim().toInt()
 
     val arr = Array<Int>(arrCount, { 0 })
     for (i in 0 until arrCount) {
-        val arrItem = readLine()!!.trim().toInt()
+        val arrItem = readln().trim().toInt()
         arr[i] = arrItem
     }
 

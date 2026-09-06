@@ -26,7 +26,7 @@ fun miniMaxSum(arr: Array<Int>): Unit {
 
 fun main() {
 
-    val arr = readLine()!!.trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
+    val arr = readln().trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
 
     miniMaxSum(arr)
 }

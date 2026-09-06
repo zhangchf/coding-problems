@@ -43,9 +43,9 @@ fun compareTriplets(a: Array<Int>, b: Array<Int>): Array<Int> {
 
 fun main() {
 
-    val a = readLine()!!.trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
+    val a = readln().trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
 
-    val b = readLine()!!.trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
+    val b = readln().trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
 
     val result = compareTriplets(a, b)
 

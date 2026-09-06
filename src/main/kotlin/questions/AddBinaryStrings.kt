@@ -25,9 +25,9 @@ fun addBinary(a: String?, b: String?): String {
 }
 
 fun main(args: Array<String>) {
-    val a = readLine()!!
+    val a = readln()
 
-    val b = readLine()!!
+    val b = readln()
 
     val result = addBinary(a, b)
 

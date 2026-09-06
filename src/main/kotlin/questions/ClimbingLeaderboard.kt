@@ -45,13 +45,13 @@ fun climbingLeaderboard(ranked: Array<Int>, player: Array<Int>): Array<Int> {
 }
 
 fun main(args: Array<String>) {
-    val rankedCount = readLine()!!.trim().toInt()
+    val rankedCount = readln().trim().toInt()
 
-    val ranked = readLine()!!.trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
+    val ranked = readln().trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
 
-    val playerCount = readLine()!!.trim().toInt()
+    val playerCount = readln().trim().toInt()
 
-    val player = readLine()!!.trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
+    val player = readln().trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
 
     val result = climbingLeaderboard(ranked, player)
 
